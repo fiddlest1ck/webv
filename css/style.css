@@ -21,7 +21,7 @@ body {
 
 @font-face {
   font-family: "asd";
-  src:url('css/Bringshot.ttf'); 
+  url('style_159306.ttf')format('truetype'); 
 }
 /* HTML5 display definitions
    ========================================================================== */
@@ -545,6 +545,9 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+p{
+  font-family: 'Lobster', cursive;
+}
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -556,7 +559,8 @@ h1 {
   letter-spacing: -.1rem; }
 
 h2 {
-  font-family: asd;
+  
+  font-family: 'Lobster', cursive;
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -.1rem; }
@@ -618,10 +622,11 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  margin-right:20px;
+  margin-top:20px;
   z-index:2;
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
   color: white;
   text-align: center;
   font-size: 11px;
@@ -977,6 +982,7 @@ img {
   z-index:2;
   background:white;
 }
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
 .largest-window {
   position:absolute;
