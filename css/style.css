@@ -546,7 +546,7 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 p{
-  font-family: 'Lobster', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -560,7 +560,7 @@ h1 {
 
 h2 {
   
-  font-family: 'Lobster', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -.1rem; }
@@ -849,7 +849,7 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));}
+  background-image: linear-gradient(to right, #84c103, rgba(0, 0, 0, 0.75), #84c103);}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -982,7 +982,9 @@ img {
   z-index:2;
   background:white;
 }
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+.separator {
+  padding-top:20px;
+}
 
 .largest-window {
   position:absolute;
