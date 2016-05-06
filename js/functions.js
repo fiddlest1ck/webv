@@ -7,7 +7,7 @@ $(window).scroll(function(){
   });
 
   $('.image2').css({
-    'transform' : 'translate(0px, '+ wScroll /6 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /10 +'%)'
   });
 
    $('.largest-window').css({
