@@ -987,14 +987,14 @@ img {
 }
 
 .largest-window {
-  position:absolute;
   z-index:2;
-  height: 640px;
-  background: black;
-  background-image: url(images/world.png);
-  background-position: center 0px;
-  background-repeat: repeat-y;
+  float:center;
+  height:640px;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-image: url(images/rocket.png);
   background-attachment: fixed; }
+
 
 .large-window {
   z-index:2;
