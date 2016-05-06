@@ -554,6 +554,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 h1 {
+  text-shadow: 6px 9px 6px rgba(255,255,255,0.2);
   font-size: 4.0rem;
   line-height: 1.2;
   letter-spacing: -.1rem; }
@@ -617,6 +618,45 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+section button {
+  margin: 10px;
+  border-radius: 100%;
+  width: 55px;
+  height: 46px;
+  border: none;
+  background: rgb(245, 245, 245);
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.4), 0px 1px 2px rgba(255,255,255, 1.0);
+}
+section button:before {
+  content: " ";
+  display: block;
+      width: 40px;
+    height: 40px;
+  box-shadow: inset 0px -1px 4px 1px rgba(0,0,0,0.4), inset 0px 2px 15px 3px rgba(255,255,255, 1.0), 2px 2px 1px rgba(0,0,0,0.1);
+  position: absolute;
+  border-radius: 100%;
+  margin-top: -10px;
+  margin-left: 1px;
+}
+section button:after {
+  display: block;
+  position: absolute;
+  color: #5a9bad;
+  text-shadow: 0px 1px 0px white;
+}
+section button:hover:after {
+  color: #5cb8d1;
+}
+section button:active:after {
+  color:#5a9bad;
+  padding-top: 1px;
+}
+section button:active:before { 
+  background: rgba(102,255,102, 0.4);
+  box-shadow: inset 0px 1px 4px 1px rgba(0,0,0,0.1), inset -2px -2px 15px 3px rgba(255,255,255, 0.8), inset 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+
 .button,
 button,
 input[type="submit"],
@@ -640,7 +680,8 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box;  }
+  box-sizing: border-box; 
+  background:#bbb; }
 
 .button:hover,
 button:hover,
@@ -901,12 +942,10 @@ img {
 .cloud-box {
   z-index:2;
   position: relative;
-  height: 600px;
-  background-image: url(images/black.jpg);
-  background-size: auto 600px;
+  background-color: black;
   background-position: top center;
-  background-attachment: fixed;
-  overflow: hidden; }
+  background-attachment: fixed; 
+  overflow:hidden;}
 
 .logo {
   height: 100px;
@@ -986,25 +1025,24 @@ img {
   padding-top:20px;
 }
 
+
+
 .largest-window {
-  z-index:2;
-  float:center;
-  height:640px;
+  margin-top:-200px;
+  height:800px;
   background-repeat:no-repeat;
-  background-position: center;
   background-image: url(images/rocket.png);
   background-attachment: fixed; }
 
 
 .large-window {
-  z-index:2;
-  height: 640px;
-  background: black;
+  height: 800px;
+  width: 1900px;
   background-image: url(images/stars.png);
   background-position: center 0px;
   background-repeat: repeat-y;
   background-attachment: fixed; 
-  position: relative; }
+ }
   
   .large-window .window-tint {
     background-color: rgba(0, 0, 0, 0.5);
