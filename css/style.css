@@ -928,7 +928,7 @@ figure {
 .content {
   position: relative;
   z-index: 2;
-  background: white;
+  background: transparent;
   margin-bottom: }
   .content article {
     padding: 100px 0;
@@ -945,8 +945,23 @@ img {
   position: relative;
   background-color: black;
   background-position: top center;
-  background-attachment: fixed; 
-  overflow:hidden;}
+  background-attachment: fixed;
+  overflow:hidden;
+
+}
+
+.box {
+  z-index:2;
+  margin-top: 650px;
+  position:absolute;
+border-left-color: whitesmoke;
+    border-left-style: dashed;
+    border-left-width: 2600px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 190px;
+    display: block;
+  }
 
 .logo {
   height: 100px;
@@ -1008,6 +1023,22 @@ img {
   z-index:2;
   background: white;
   margin-bottom:130px; }
+
+#add {
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 200px 200px;
+border-color: transparent transparent #007bff transparent;
+}
+
+#main {
+  background:white;
+}
+#icons {
+  margin-bottom:200px;
+  background:white;
+}
 
 .team {
   z-index:2;
@@ -1262,9 +1293,10 @@ a[data-tooltip][data-placement="bottom"]::after {
 
 
 footer {
+  z-index:1;
   background: black;
   color: white;
-  bottom:-50px;
+  bottom:-20px;
   position: fixed;
   width: 100%; }
   footer .footer-stuff {
