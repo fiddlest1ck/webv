@@ -10,8 +10,22 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll /10 +'%)'
   });
 
-   $('.largest-window').css({
-    'transform' : 'translate(23%, '+ wScroll /70 +'%)'
+if ( $(this).scrollTop() > 700) {
+  $('.cosmos').css({
+    'display': 'none'
+    }); 
+  $('.cosmos1').css({
+    'display': 'block'
+  });
+}
+else {
+  $('.cosmos').css({
+    'display': 'block'
+  }); 
+  $('.cosmos1').css({
+    'display': 'none'
   });
 
-   });
+}
+
+ });
